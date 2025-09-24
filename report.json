@@ -1,0 +1,41 @@
+[
+  {
+    "log_id": "db-server-3",
+    "file_path": "test_logs/mysql_error.log",
+    "status": "FAILED",
+    "message": "Fichier introuvable.",
+    "error_details": "GetFileAttributesEx test_logs/mysql_error.log: The system cannot find the file specified."
+  },
+  {
+    "log_id": "empty-log",
+    "file_path": "test_logs/empty.log",
+    "status": "OK",
+    "message": "Fichier vide - aucune analyse nécessaire."
+  },
+  {
+    "log_id": "invalid-path",
+    "file_path": "/non/existent/log.log",
+    "status": "FAILED",
+    "message": "Fichier introuvable.",
+    "error_details": "GetFileAttributesEx /non/existent/log.log: The system cannot find the path specified."
+  },
+  {
+    "log_id": "web-server-1",
+    "file_path": "test_logs/access.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès."
+  },
+  {
+    "log_id": "corrupted-log",
+    "file_path": "test_logs/corrupted.log",
+    "status": "FAILED",
+    "message": "Erreur de parsing détectée.",
+    "error_details": "parsing failed: INVALID_LINE_123: This line cannot be parsed due to wrong format."
+  },
+  {
+    "log_id": "app-backend-2",
+    "file_path": "test_logs/errors.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès."
+  }
+]
